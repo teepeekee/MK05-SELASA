@@ -1,0 +1,52 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            text-align: center;
+        }
+        .plans {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .plan {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 200px;
+            text-align: left;
+        }
+        .plan.most-popular {
+            border: 2px solid #ff497b;
+            position: relative;
+        }
+        .plan.most-popular::before {
+            content: "MOST POPULAR";
+            color: white;
+            background-color: #ff497b;
+            padding: 5px 10px;
+            font-size: 12px;
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 5px;
+        }
+        .plan h2 {
+            margin: 0 0 10px;
+            font-size: 24px;
+            color: #333;
+        }
+        .plan p {
+            margin: 0;
+            color: #555;
+        }
